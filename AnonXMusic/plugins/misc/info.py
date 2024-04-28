@@ -11,7 +11,7 @@ from typing import Union, Optional
 
 EVAA = [
     [
-        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/nykaaxbot?startgroup=true"),
+        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/Gojoroxbot?startgroup=true"),
     ],
 ]
 
@@ -72,7 +72,7 @@ INFO_TEXT = """
 ● ᴜsᴇʀ sᴛᴀᴛᴜs ➥ {}
 ● ᴜsᴇʀ ᴅᴄ ɪᴅ ➥ {}
 
-❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ ๛ᴀ ᴠ ɪ s ʜ ᴀ ࿐
+❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ ๛𝐆ᴏᴊᴏ ࿐
 ▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▰
 """
 
