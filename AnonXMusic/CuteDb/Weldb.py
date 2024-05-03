@@ -1,4 +1,5 @@
-from AnonXMusic.CutDb import *
+
+from AnonXMusic.CuteDb import *
 
 wlcm = dbname["welcome"]
 
