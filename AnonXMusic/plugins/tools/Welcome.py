@@ -38,15 +38,15 @@ def welcomepic(pic, user, chat, id, uname):
     pfp = Image.open(pic).convert("RGBA")
     pfp = circle(pfp)
     pfp = pfp.resize(
-        (420, 420)
+        (605, 605)
     ) 
     draw = ImageDraw.Draw(background)
-    font = ImageFont.truetype('AnonXMusic/assets/font.ttf', size=50)
+    font = ImageFont.truetype('AnonXMusic/assets/font.ttf', size=65)
     font2 = ImageFont.truetype('AnonXMusic/assets/font.ttf', size=90)
-   # draw.text((65, 250), f'NAME : {unidecode(user)}', fill=(255, 255, 255), font=font)
-   # draw.text((65, 340), f'ID : {id}', fill=(255, 255, 255), font=font)
-   # draw.text((65, 430), f"USERNAME : {uname}", fill=(255,255,255),font=font)
-    pfp_position = (133, 767)  
+   # draw.text((150, 450), f'NAME : {unidecode(user)}', fill="black", font=font)
+  #  draw.text((150, 550), f'ID : {id}', fill="black", font=font)
+ #   draw.text((150, 650), f"USERNAME : {uname}", fill="black",font=font)
+    pfp_position = (133, 773)  
     background.paste(pfp, pfp_position, pfp)  
     background.save(
         f"downloads/welcome#{id}.png"
@@ -54,7 +54,7 @@ def welcomepic(pic, user, chat, id, uname):
     return f"downloads/welcome#{id}.png"
 
 
-########
+######
 
 @app.on_chat_member_updated(filters.group, group=-3)
 async def greet_group(_, member: ChatMemberUpdated):
@@ -74,7 +74,7 @@ async def greet_group(_, member: ChatMemberUpdated):
             user.photo.big_file_id, file_name=f"pp{user.id}.png"
         )
     except AttributeError:
-        pic = "assets/NODP.PNG"
+        pic = "AnonXMusic/assets/upic.png"
     if (temp.MELCOW).get(f"welcome-{member.chat.id}") is not None:
         try:
             await temp.MELCOW[f"welcome-{member.chat.id}"].delete()
@@ -95,12 +95,12 @@ async def greet_group(_, member: ChatMemberUpdated):
 ● ᴜsᴇʀɴᴀᴍᴇ ➥  @{user.username}
 ● ᴜsᴇʀ ɪᴅ ➥  {user.id}
 
-❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ ๛𝐆ᴏᴊᴏ ࿐
+❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ ๛ᴀ ᴠ ɪ s ʜ ᴀ ࿐
 ▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▰
 """,
 reply_markup=InlineKeyboardMarkup(
 [
-[InlineKeyboardButton(f"ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/Gojoroxbot?startgroup=new"),
+[InlineKeyboardButton(f"ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/avishaxBot?startgroup=new"),
 ]
 ]
 ))
@@ -113,4 +113,5 @@ reply_markup=InlineKeyboardMarkup(
     except Exception as e:
         pass
 
-  
+
+    
