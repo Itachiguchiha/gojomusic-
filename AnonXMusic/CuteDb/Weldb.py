@@ -1,8 +1,12 @@
-from async_pymongo import AsyncClient
-from config import MONGO_DB_URI
+from AnonXMusic.CuteDb import *
 
-DBNAME = "CUTIEXMUSICBOTPT"
+wlcm = dbname["welcome"]
 
-mongo = AsyncClient(MONGO_DB_URI)
-dbname = mongo[DBNAME]
+async def add_wlcm(chat_id : int):
+    return await wlcm.insert_one({"chat_id" : chat_id})
+
+async def rm_wlcm(chat_id : int):   
+    chat = await wlcm.find_one({"chat_id" : chat_id})
+    if chat: 
+        return await wlcm.delete_one({"chat_id" : chat_id})
       
