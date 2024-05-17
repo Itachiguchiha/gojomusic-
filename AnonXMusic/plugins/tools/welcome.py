@@ -43,10 +43,10 @@ def welcomepic(pic, user, chat, id, uname):
     draw = ImageDraw.Draw(background)
     font = ImageFont.truetype('AnonXMusic/assets/font.ttf', size=50)
     font2 = ImageFont.truetype('AnonXMusic/assets/font.ttf', size=90)
-    draw.text((65, 250), f'NAME : {unidecode(user)}', fill="white", font=font)
-    draw.text((65, 340), f'ID : {id}', fill="white", font=font)
-    draw.text((65, 430), f"USERNAME : {uname}", fill="white",font=font)
-    pfp_position = (767, 133)  
+   # draw.text((65, 250), f'NAME : {unidecode(user)}', fill="white", font=font)
+   # draw.text((65, 340), f'ID : {id}', fill="white", font=font)
+  #  draw.text((65, 430), f"USERNAME : {uname}", fill="white",font=font)
+    pfp_position = (730, 120)  
     background.paste(pfp, pfp_position, pfp)  
     background.save(
         f"downloads/welcome#{id}.png"
