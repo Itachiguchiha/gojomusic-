@@ -14,10 +14,10 @@ API_HASH = getenv("API_HASH", None)
 OWNER_USERNAME = getenv("OWNER_USERNAME", "The_clan_killer_12")
 
 #❖  Get Your bot username
-BOT_USERNAME = getenv("BOT_USERNAME", "Gojoroxbot")
+BOT_USERNAME = getenv("BOT_USERNAME", "Annaproxbot")
 
 #❖  Don't Add style font 
-BOT_NAME = getenv("BOT_NAME", "GOJO MUSIC")
+BOT_NAME = getenv("BOT_NAME", "ANNA MUSIC")
 
 #❖ get Your Assistant User name
 ASSUSERNAME = getenv("ASSUSERNAME", "gojo_ass")
@@ -53,8 +53,8 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  #❖ Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/gojoupdate")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/gojosatorusupport")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/dynamic_updates")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/infinity_anime_gang")
 
 #❖ Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
