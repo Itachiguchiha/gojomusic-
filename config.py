@@ -20,7 +20,7 @@ BOT_USERNAME = getenv("BOT_USERNAME", "Annaproxbot")
 BOT_NAME = getenv("BOT_NAME", "ANNA MUSIC")
 
 #❖ get Your Assistant User name
-ASSUSERNAME = getenv("ASSUSERNAME", "gojo_ass")
+ASSUSERNAME = getenv("ASSUSERNAME", "anna_assi")
 
 #❖ Get your token from @BotFather on Telegram.
 BOT_TOKEN = getenv("BOT_TOKEN")
